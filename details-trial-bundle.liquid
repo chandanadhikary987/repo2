@@ -1,0 +1,314 @@
+details-trial-bundle.liquid
+
+<div class="ingred_tab">
+    <div class="product_feature_inner">
+    
+      	<div class="tabs">
+        <ul id="tab-links">
+            <li><a href="#tab-1" class="active blue-tab" title="Details">{{ section.settings.details }}</a></li>
+          <li><a href="#tab-2" title="Ingredients" class="light-blue-tab">{{ section.settings.ingredients }}</a></li>
+            <li><a href="#tab-3" title="Directions" class="yellow-tab">{{ section.settings.directions }}</a></li> 
+
+        </ul>
+	
+	<section id="tab-1" class="active blue-tab cmn-tab">
+      <div class="detail--info">
+        <h2><span>{{ section.settings.details-heading }}</span></h2>
+        <div class="types">
+            <ul>
+              
+        <li><img src="{{ section.settings.details-img1 | img_url: "720x" }}">{{ section.settings.details-text1 }}</li>
+        <li><img src="{{ section.settings.details-img2 | img_url: "720x" }}">{{ section.settings.details-text2 }}</li>
+        <li><img src="{{ section.settings.details-img3 | img_url: "720x" }}">{{ section.settings.details-text3 }}</li>
+        <li><img src="{{ section.settings.details-img4 | img_url: "720x" }}">{{ section.settings.details-text4 }}</li>
+        <li><img src="{{ section.settings.details-img5 | img_url: "720x" }}">{{ section.settings.details-text5 }}</li>
+        <li><img src="{{ section.settings.details-img6 | img_url: "720x" }}">{{ section.settings.details-text6 }}</li>
+            </ul>
+        </div>
+    </div>
+	</section>
+
+		<section id="tab-2" class="light-blue-tab cmn-tab">
+      <div class="trial_in">
+        <div class="detail--info">
+            <img src="{{ section.settings.ingredients-img1 | img_url: "720x" }}">
+            <div class="types">
+              <h2>{{ section.settings.ingredients-head-text1 }}</span></h2>
+              <p>{{ section.settings.ingredients-content1 }}</p>
+            </div>
+            <div class="full_ingred">
+              <a href="#" class="show_hide" data-content="toggle-text">{{ section.settings.ingredients-accordion-text1 }} <i class="fas fa-plus"></i></a>
+              <div class="content">{{ section.settings.ingredients-accordion-content1 }}</div>
+           </div> 
+        </div>
+      </div>
+      <div class="trial_in">
+        <div class="detail--info">
+            <img src="{{ section.settings.ingredients-img2 | img_url: "720x" }}">
+            <div class="types">
+              <h2>{{ section.settings.ingredients-head-text2 }}</span></h2>
+              <p>{{ section.settings.ingredients-content2 }}</p>
+            </div>
+            <div class="full_ingred">
+              <a href="#" class="show_hide" data-content="toggle-text">{{ section.settings.ingredients-accordion-text2 }} <i class="fas fa-plus"></i></a>
+              <div class="content"> {{ section.settings.ingredients-accordion-content2 }}</div>
+           </div> 
+        </div>
+      </div>
+      <div class="trial_in">
+        <div class="detail--info">
+            <img src="{{ section.settings.ingredients-img3 | img_url: "720x" }}">
+            <div class="types">
+              <h2>{{ section.settings.ingredients-head-text3 }}</span></h2>
+              <p>{{ section.settings.ingredients-content3 }}</p>
+            </div>
+            <div class="full_ingred">
+              <a href="#" class="show_hide" data-content="toggle-text">{{ section.settings.ingredients-accordion-text3 }} <i class="fas fa-plus"></i></a>
+              <div class="content">  {{ section.settings.ingredients-accordion-content3 }}</div>
+           </div> 
+        </div>
+      </div> 
+
+    </section>
+    <section id="tab-3" class="yellow-tab cmn-tab">
+      		 <ul>
+              <li><img src="{{ section.settings.directions-img1 | img_url: "720x" }}">{{ section.settings.directions-ing1 }}</li>
+        <li><img src="{{ section.settings.directions-img2 | img_url: "720x" }}">{{ section.settings.directions-ing2 }}</li>
+        <li><img src="{{ section.settings.directions-img3 | img_url: "720x" }}">{{ section.settings.directions-ing3 }}</li>
+        <li><img src="{{ section.settings.directions-img4 | img_url: "720x" }}">{{ section.settings.directions-ing4 }}</li>
+            </ul>
+		        <p>{{ section.settings.directions-content }}</p> 
+	  </section>
+	
+	
+</div>
+    
+    </div>
+
+  
+  </div>  
+
+{% schema %}
+  {
+    "name": "Product Details",
+    "settings": [
+		{
+		"type": "text",
+         "id": "details",
+         "label": "Details Heading"
+		}, 
+		{
+		"type": "textarea", 
+         "id": "details-content",
+         "label": "Details Content"
+		}, 
+		{
+		"type": "text",
+         "id": "details-heading",
+         "label": "Details heading"
+		},
+		{
+		"type": "text",
+         "id": "details-text1",
+         "label": "Details first text"
+		},
+		{
+		"type": "image_picker",
+         "id": "details-img1",
+         "label": "Details first icon"
+		},
+		{
+		"type": "text",
+         "id": "details-text2",
+         "label": "Details second text"
+		},
+		{
+		"type": "image_picker",
+         "id": "details-img2",
+         "label": "Details second icon"
+		},
+		{
+		"type": "text",
+         "id": "details-text3",
+         "label": "Details third text"
+		},
+		{
+		"type": "image_picker",
+         "id": "details-img3",
+         "label": "Details third icon"
+		},
+		{
+		"type": "text",
+         "id": "details-text4",
+         "label": "Details fourth text"
+		},
+		{
+		"type": "image_picker",
+         "id": "details-img4",
+         "label": "Details fourth icon"
+		}, 
+		{
+		"type": "text",
+         "id": "details-text5",
+         "label": "Details fifth text"
+		}, 
+		{
+		"type": "image_picker",
+         "id": "details-img5",
+         "label": "Details fifth icon"
+		},
+		{ 
+		"type": "text",
+         "id": "details-text6",
+         "label": "Details sixth text"
+		},
+		{
+		"type": "image_picker",
+         "id": "details-img6",
+         "label": "Details sixth icon"
+		},
+		
+		{
+		"type": "text",
+         "id": "ingredients",
+         "label": "Ingredients Heading"
+		},
+		{
+		"type": "image_picker",
+         "id": "ingredients-img1",
+         "label": "Ingredients first icon"
+		},
+		{
+		"type": "text",
+         "id": "ingredients-head-text1",
+         "label": "Ingredients head text1"
+		},			
+		{ 
+		"type": "textarea", 
+         "id": "ingredients-content1",
+         "label": "Ingredients Content1"
+		},
+		{
+		"type": "text",
+         "id": "ingredients-accordion-text1",
+         "label": "Ingredients accordion text1"
+		},			
+		{ 
+		"type": "textarea", 
+         "id": "ingredients-accordion-content1",
+         "label": "Ingredients accordion Content1"
+		},
+
+		{
+		"type": "image_picker",
+         "id": "ingredients-img2",
+         "label": "Ingredients first icon2"
+		},
+		{
+		"type": "text",
+         "id": "ingredients-head-text2",
+         "label": "Ingredients head text2"
+		},			
+		{ 
+		"type": "textarea", 
+         "id": "ingredients-content2",
+         "label": "Ingredients Content2"
+		},
+		{
+		"type": "text",
+         "id": "ingredients-accordion-text2",
+         "label": "Ingredients accordion text2"
+		},			
+		{ 
+		"type": "textarea", 
+         "id": "ingredients-accordion-content2",
+         "label": "Ingredients accordion Content2"
+		}, 
+		
+		{
+		"type": "image_picker",
+         "id": "ingredients-img3",
+         "label": "Ingredients first icon3"
+		},
+		{
+		"type": "text",
+         "id": "ingredients-head-text3",
+         "label": "Ingredients head text3"
+		},			
+		{ 
+		"type": "textarea", 
+         "id": "ingredients-content3",
+         "label": "Ingredients Content3"
+		},
+		{
+		"type": "text",
+         "id": "ingredients-accordion-text3",
+         "label": "Ingredients accordion text3"
+		},			
+		{ 
+		"type": "textarea", 
+         "id": "ingredients-accordion-content3",
+         "label": "Ingredients accordion Content3"
+		}, 
+		
+
+		{
+		"type": "text",
+         "id": "directions",
+         "label": "Directions"
+		},
+		{
+		"type": "text",
+         "id": "directions-ing1",
+         "label": "Directions first text"
+		},
+		{
+		"type": "image_picker",
+         "id": "directions-img1",
+         "label": "Directions first icon"
+		},
+		{
+		"type": "text",
+         "id": "directions-ing2",
+         "label": "Directions second text"
+		},
+		{
+		"type": "image_picker",
+         "id": "directions-img2",
+         "label": "Directions second icon"
+		},
+		{
+		"type": "text",
+         "id": "directions-ing3",
+         "label": "Directions third text"
+		},
+		{
+		"type": "image_picker",
+         "id": "directions-img3",
+         "label": "Directions third icon"
+		},
+		{
+		"type": "text",
+         "id": "directions-ing4",
+         "label": "Directions fourth text"
+		},
+		{
+		"type": "image_picker",
+         "id": "directions-img4",
+         "label": "Directions fourth icon"
+		},
+		{ 
+		"type": "textarea", 
+         "id": "directions-content",
+         "label": "Directions Content"
+		}
+	] 
+   
+  } 
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}  
+
+{% javascript %}
+{% endjavascript %}   
